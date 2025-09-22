@@ -103,6 +103,6 @@ Fish_Mean_Density_Park <- PSU_FD_group %>%
   group_by(PROT, group) %>% 
   summarize(meanDensity = mean(density)) %>%
   mutate(highDensity = case_when(
-    summarize (meanDensity >
+    summarize (meanDensity > 
 
                  
